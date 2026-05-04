@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+}
+
+.heart {
+    font-size: 100px;
+    filter: drop-shadow(0 0 20px red);
+    position: relative;
+    animation: heartbeatMove 5s linear infinite;
+}
+
+@keyframes heartbeatMove {
+    0% {
+        left: -50%;
+        translate: 0 0;
+    }
+
+    10% {
+        translate: 0 0;
+    }
+
+    15% {
+        transform: scale(1);
+        translate: 0 -120px;
+    }
+
+    25% {
+        transform: scale(1.2);
+        translate: 0 100px;
+    }
+
+    35% {
+        transform: scale(1);
+        translate: 0 -120px;
+    }
+
+    45% {
+        transform: scale(1.2);
+        translate: 0 100px;
+    }
+
+    55% {
+        transform: scale(1);
+        translate: 0 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
